@@ -817,7 +817,7 @@
         </p>
 
         <p>
-          <span id="databasePrivacy" class="subTitleLine">Privacy Model and Database</span>
+          <span id="databasePrivacy" class="subTitleLine">Privacy Model</span>
         </p>
         <p>
           Given the personally identifying nature of the spatiotemporal
