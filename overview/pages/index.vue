@@ -128,7 +128,7 @@
           </TableOfContents>
 
           <div class="mainSubTitle">
-            <p>Join the Watch. Help stop COVID-19 with crowdsourced data.</p>
+            <p>Help stop COVID-19 with crowdsourced data.</p>
           </div>
         </div>
 
