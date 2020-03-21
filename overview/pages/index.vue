@@ -4,7 +4,7 @@
       <v-col cols="12" lg="10">
         <div class="TopSection">
           <div class="mainTitle">
-            <img src="../assets/images/logo/banner_1.png" alt="" />
+            <img src="~/assets/images/logo/banner_1.png" alt="" />
           </div>
 
           <TableOfContents>
@@ -256,7 +256,7 @@
           class="centerImage"
           style="display:flex;flex-direction:column;align-items:center;"
         >
-          <img src="../assets/images/ROKDailyCases.png" alt="" />
+          <img src="~/assets/images/ROKDailyCases.png" alt="" />
           <p style="color:gray;">
             <span>South Korea&nbsp;</span>
             <a
@@ -400,11 +400,7 @@
           class="centerImage"
           style="display:flex;flex-direction:column;align-items:center;"
         >
-          <img
-            style="width:70%"
-            src="../assets/images/Contact_Tracing_Map.png"
-            alt=""
-          />
+          <img src="~/assets/images/overview_article_imgs/003.png" alt="" />
           <p style="color:gray;">Contact Network</p>
         </div>
 
@@ -1115,7 +1111,7 @@
           class="centerImage"
           style="display:flex;flex-direction:column;align-items:center;"
         >
-          <img src="../assets/images/ProportionTraced.png" alt="" />
+          <img src="~/assets/images/ProportionTraced.png" alt="" />
           <p style="color:gray;">
             Transmission Detection vs. App Usage curves for testing rates [0.05,
             0.1, 0.2, 0.4, 0.8]. BLE_Acc gives the detection rate of
@@ -1145,15 +1141,12 @@
           population using the app increases the risk for the entire population
           is reduced and most outbreaks are contained.
         </p>
-        <v-row>
-          <v-col cols="12" md="6">
-            <img src="../assets/images/totalInfected.png" alt="" />
-          </v-col>
-          <v-col cols="12" md="6">
-            <img src="../assets/images/appInfected.png" alt="" />
-          </v-col>
-        </v-row>
-        <v-row>
+        <div
+          class="centerImage"
+          style="display:flex;flex-direction:column;align-items:center;"
+        >
+          <img src="~/assets/images/totalInfected.png" width="70%" alt="" />
+          <img src="~/assets/images/appInfected.png" width="70%" alt="" />
           <p style="color:gray;">
             Expected infections for total population (top) and app population
             (bottom) adjusted for relative population size.
