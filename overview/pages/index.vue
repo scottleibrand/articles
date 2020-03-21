@@ -98,7 +98,6 @@
                     <a href="#userRecommendations">Part 3: Recommendations</a>
                     <!-- <ol class="nestedInnerList">
                       <li><a href="#scopeDesign">Scope and Design</a></li>
-                      <li><a href="#timeline">Timeline to Deployment</a></li>
                     </ol> -->
                   </li>
                 </ol>
@@ -106,15 +105,18 @@
               <li>
                 <strong><a href="#care">Why You Should Care</a></strong>
                 <ol class="innerList">
-                  <li><a href="#healthAuthorities">Health Authorities</a></li>
-                  <li><a href="#users">Individuals (Users)</a></li>
+                  <li><a href="#healthAuthorities">Incentives for Health Authorities</a></li>
+                  <li><a href="#users">Incentives for Individuals</a></li>
                   <li><a href="#impact">Quantitative Analysis of Impact</a></li>
                 </ol>
               </li>
               <li>
+                <strong><a href="#timeline">Timeline to Deployment</a></strong>
+              </li>
+              <li>
                 <strong><a href="#conclusion">Conclusion</a></strong>
                 <ol class="innerList">
-                  <li><a href="#youDo">What You Can Do</a></li>
+                  <li><a href="#youDo">Who Can Help</a></li>
                   <li>
                     <a href="#contributors"
                       >Authors, Advisors, and Acknowledgements</a
