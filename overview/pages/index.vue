@@ -9,10 +9,10 @@
 
           <TableOfContents>
             <h2 class="titleLine">Table of Contents</h2>
-            <ol class="outerList">
+            <ul class="outerList">
               <li>
                 <strong><a href="#aboutUs">About Us</a></strong>
-                <ol class="innerList">
+                <ul class="innerList">
                   <li><a href="#mission">Mission Statement</a></li>
                   <li><a href="#privacy">Privacy Focus</a></li>
                   <li>
@@ -25,7 +25,7 @@
                       >Making Interventions More Efficient</a
                     >
                   </li>
-                </ol>
+                </ul>
               </li>
               <li>
                 <strong
@@ -33,12 +33,12 @@
                     >Proposed System: Three Parts</a
                   ></strong
                 >
-                <ol class="innerList">
+                <ul class="innerList">
                   <li>
                     <a href="#contactTracing"
                       >Part 1: Bluetooth Contact Tracing</a
                     >
-                    <!-- <ol class="nestedInnerList">
+                    <!-- <ul class="nestedInnerList">
                       <li>
                         <a href="#contactTracingBackground"
                           >Contact Tracing Background</a
@@ -64,11 +64,11 @@
                           >Implementation</a
                         >
                       </li>
-                    </ol> -->
+                    </ul> -->
                   </li>
                   <li>
                     <a href="#heatmapTitle">Part 2: GPS Heatmap</a>
-                    <!-- <ol class="nestedInnerList">
+                    <!-- <ul class="nestedInnerList">
                       <li>
                         <a href="#heatmapDesc">Model Description</a>
                       </li>
@@ -92,39 +92,39 @@
                           >GPS Anonymization Model</a
                         >
                       </li>
-                    </ol> -->
+                    </ul> -->
                   </li>
                   <li>
                     <a href="#userRecommendations">Part 3: Recommendations</a>
-                    <!-- <ol class="nestedInnerList">
+                    <!-- <ul class="nestedInnerList">
                       <li><a href="#scopeDesign">Scope and Design</a></li>
-                    </ol> -->
+                    </ul> -->
                   </li>
-                </ol>
+                </ul>
               </li>
               <li>
                 <strong><a href="#care">Why You Should Care</a></strong>
-                <ol class="innerList">
+                <ul class="innerList">
                   <li><a href="#healthAuthorities">Incentives for Health Authorities</a></li>
                   <li><a href="#users">Incentives for Individuals</a></li>
                   <li><a href="#impact">Quantitative Analysis of Impact</a></li>
-                </ol>
+                </ul>
               </li>
               <li>
                 <strong><a href="#timeline">Timeline to Deployment</a></strong>
               </li>
               <li>
                 <strong><a href="#conclusion">Conclusion</a></strong>
-                <ol class="innerList">
+                <ul class="innerList">
                   <li><a href="#youDo">Who Can Help</a></li>
                   <li>
                     <a href="#contributors"
                       >Authors, Advisors, and Acknowledgements</a
                     >
                   </li>
-                </ol>
+                </ul>
               </li>
-            </ol>
+            </ul>
           </TableOfContents>
 
           <div class="mainSubTitle">
