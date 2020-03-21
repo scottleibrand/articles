@@ -137,7 +137,6 @@
           >
 
           <v-divider></v-divider>
-
           <v-card-text class="gray--text">
             <img src="~/assets/images/logo/banner_1.png" alt="" />
           </v-card-text>
