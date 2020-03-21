@@ -67,6 +67,7 @@
                 </ol>
               </li>
             </ol>
+          </TableOfContents>
           </div>
         </div>
 
