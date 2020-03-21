@@ -17,12 +17,12 @@
                   <li><a href="#privacy">Privacy Focus</a></li>
                   <li>
                     <a href="#interventionBackground"
-                      >Mobile Phone Intervention Background</a
+                      >Current Mobile Phone Interventions</a
                     >
                   </li>
                   <li>
                     <a href="#interventionOptimization"
-                      >Mobile Phone Intervention Optimization</a
+                      >Making Interventions More Efficient</a
                     >
                   </li>
                 </ol>
@@ -46,17 +46,22 @@
                       </li>
                       <li>
                         <a href="#blueToothModel"
-                          >Bluetooth Contact Tracing Model Description</a
+                          >Model Description</a
                         >
                       </li>
                       <li>
                         <a href="#blueToothPrivacy"
-                          >Bluetooth Privacy Model and Database</a
+                          >Privacy Model</a
                         >
                       </li>
                       <li>
                         <a href="#bluetoothDatabase"
-                          >Bluetooth Contact Tracing Implementation</a
+                          >Database</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#bluetoothImplementation"
+                          >Implementation</a
                         >
                       </li>
                     </ol> -->
@@ -65,21 +70,26 @@
                     <a href="#heatmapTitle">Part 2: GPS Heatmap</a>
                     <!-- <ol class="nestedInnerList">
                       <li>
-                        <a href="#heatmapDesc">GPS Heatmap Model Description</a>
+                        <a href="#heatmapDesc">Model Description</a>
                       </li>
                       <li>
                         <a href="#heatmapImplementation"
-                          >GPS Heatmap Implementation</a
+                          >Implementation</a
                         >
                       </li>
                       <li>
                         <a href="#heatmapEpidemiology"
-                          >GPS Heatmap Epidemiology Model</a
+                          >Epidemiology Model</a
                         >
                       </li>
                       <li>
                         <a href="#databasePrivacy"
-                          >GPS Privacy Model and Database</a
+                          >Privacy Model</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#databaseAnonymization"
+                          >GPS Anonymization Model</a
                         >
                       </li>
                     </ol> -->
@@ -88,7 +98,6 @@
                     <a href="#userRecommendations">Part 3: Recommendations</a>
                     <!-- <ol class="nestedInnerList">
                       <li><a href="#scopeDesign">Scope and Design</a></li>
-                      <li><a href="#timeline">Timeline to Deployment</a></li>
                     </ol> -->
                   </li>
                 </ol>
@@ -96,15 +105,18 @@
               <li>
                 <strong><a href="#care">Why You Should Care</a></strong>
                 <ol class="innerList">
-                  <li><a href="#healthAuthorities">Health Authorities</a></li>
-                  <li><a href="#users">Individuals (Users)</a></li>
+                  <li><a href="#healthAuthorities">Incentives for Health Authorities</a></li>
+                  <li><a href="#users">Incentives for Individuals</a></li>
                   <li><a href="#impact">Quantitative Analysis of Impact</a></li>
                 </ol>
               </li>
               <li>
+                <strong><a href="#timeline">Timeline to Deployment</a></strong>
+              </li>
+              <li>
                 <strong><a href="#conclusion">Conclusion</a></strong>
                 <ol class="innerList">
-                  <li><a href="#youDo">What You Can Do</a></li>
+                  <li><a href="#youDo">Who Can Help</a></li>
                   <li>
                     <a href="#contributors"
                       >Authors, Advisors, and Acknowledgements</a
@@ -744,7 +756,7 @@
 
         <p>
           <span id="heatmapEpidemiology" class="subTitleLine"
-            >Heatmap Epidemiology Model</span
+            >Epidemiology Model</span
           >
         </p>
         <p>
@@ -1051,10 +1063,7 @@
           isolation of suspected cases, outbreaks can be contained.
         </p>
         <p>
-          For intermediate testing and contact tracing detection rates, a system
-          like this would likely need to be used in combination with social
-          distancing measures and manual contact tracing. However, the measures
-          suggested by
+          For intermediate testing and contact tracing detection rates, a system like this would likely need to be used in combination with continued social distancing measures and manual contact tracing. However, the measures suggested by
           <a
             href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf"
             >Ferguson et al</a
@@ -1067,16 +1076,16 @@
           is the simplest to quantify. Any two users of the app who are at the
           same location at the same time will register a contact event. In
           theory, all transmission events except those by fomites would be
-          detected. This includes all types of contact classified as being
+          detected. This includes all types of contact classified as being “high risk” by the
           <a
             href="https://www.ecdc.europa.eu/sites/default/files/documents/covid-19-public-health-management-contact-novel-coronavirus-cases-EU.pdf"
-            >“high risk” by the ECDC</a
+            >ECDC</a
           >.
         </p>
         <p>
           Preventative measures encouraged by the app such as avoiding high-risk
           areas and increased precautions would reduce overall transmission
-          rate, however it is difficult to quantify this impact. The current
+          rate, but it is difficult to quantify this impact. The current
           design of the app may also increase detection rate by informing users
           of symptoms to watch for and how to get tested. Ongoing research is
           being conducted on how to allocate testing resources to maximize the
@@ -1135,35 +1144,22 @@
           population using the app increases the risk for the entire population
           is reduced and most outbreaks are contained.
         </p>
-        <v-row>
-          <v-col cols="12" md="6">
-            <img src="../assets/images/totalInfected.png" alt="" />
-          </v-col>
-          <v-col cols="12" md="6">
-            <img src="../assets/images/appInfected.png" alt="" />
-          </v-col>
-        </v-row>
-        <v-row>
+        <div
+          class="centerImage"
+          style="display:flex;flex-direction:column;align-items:center;"
+        >
+          <img src="~/assets/images/totalInfected.png" width="70%" alt="" />
+          <img src="~/assets/images/appInfected.png" width="70%" alt="" />
           <p style="color:gray;">
             Expected infections for total population (top) and app population
             (bottom) adjusted for relative population size.
           </p>
         </v-row>
         <p>
-          <strong
-            >So for the question: “Can an effective contact tracing program
-            reduce local transmission so that sustained local spread does not
-            occur?”
+          <strong>What we’ve most wanted to know is the answer to this question: “Can an effective contact tracing program reduce local transmission so that sustained local spread does not occur?” The answer looks like yes.
           </strong>
         </p>
-        <p>
-          The answer seems to be yes. With a comprehensive testing program, high
-          contact tracing accuracy, and self-isolation of diagnosed individuals,
-          our models predict that each new case could cause on the order of 10
-          other cases before the outbreak is extinguished. Even in parameter
-          regimes where automated contact tracing alone is not enough, this
-          technology can be used in combination with existing methodologies to
-          provide greater protections with lower social cost.
+        <p>With a comprehensive testing program, high mobile app contact tracing accuracy, and self-isolation of diagnosed individuals, our models predict that each new case could cause on the order of 10 other cases before the outbreak is extinguished.
         </p>
         <p>
           Also, even in parameter regimes where automated contact tracing alone
@@ -1197,24 +1193,13 @@
         <p>The app will be implemented and launched in two parts:</p>
         <ul style="list-style:decimal">
           <li>
-            The first version will implement a GPS/Bluetooth proximity network
-            system to develop a heatmap to track and notify users of potential
-            close contact exposure to SARS-CoV-2.
+            The first version will implement the Bluetooth proximity network and risk heatmap to notify users of potential close contact exposure to SARS-CoV-2 (Fig 1).
           </li>
           <li>
-            The second version will build upon the initial launch. Users may be
-            able to self-report symptoms, receive personalized advice based on
-            the local health department, and receive CDC advice and resources
-            (Fig. 1). When users come in contact with someone with COVID-19 or
-            symptoms of it, their phones will send them a push notification of
-            the alert. Users could then see their Transmission Phone Log within
-            the application to determine where and when they may have contracted
-            the virus. Additional features include incorporating a
-            locally-stored questionnaire noting recent travel and symptoms to
-            better determine the user’s risk level (Fig. 2).
+            The second version will build upon the initial launch. Users may be able to self-report symptoms to receive personalized advice based on their risk score and advice from the local health department (Fig. 2).
           </li>
         </ul>
-        <p></p>
+        <p>We intend to build the tools for all of these systems, but understand that regulatory requirements may vary by region. The app will be designed so that each component can be used separately if necessary.</p>
         <p>
           We also want to emphasize that high user adoption as quickly as
           possible after release will facilitate the best possible outcomes for
@@ -1230,13 +1215,7 @@
         <h2 id="conclusion"><span class="titleLine">Conclusions</span></h2>
         <br />
         <p>
-          Mobile technologies can provide instantaneous and high accuracy
-          contact tracing, even between strangers at low social and economic
-          cost. Instead of requiring thousands of healthcare workers to do this
-          manually (as is the current approach in China) the process will be
-          essentially cost-free. Also, because the system will be so accurate, a
-          majority of people can continue to live their lives without the need
-          for increased social distancing.
+          Mobile technologies can provide instantaneous and high accuracy contact tracing, even between strangers at low social and economic cost. Instead of requiring thousands of healthcare workers to do this manually, the process will be essentially cost-free. Because the system will be so accurate, a majority of people can resume living their lives normally without the need for indefinite social distancing.
         </p>
         <p>
           We are developing this technology as a high-quality filter to be used
