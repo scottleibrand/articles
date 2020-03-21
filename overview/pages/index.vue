@@ -4,10 +4,16 @@
       <v-col cols="12" lg="10">
         <div class="TopSection">
           <div class="mainTitle">
-            <img src="~/assets/images/logo/banner_1.png" alt="" />
+            <img src="../assets/images/logo/banner_1.png" alt="" />
           </div>
 
-          <TableOfContents>
+          <div class="mainSubTitle">
+            <p>Join the Watch. Help stop COVID-19 with crowdsourced data.</p>
+          </div>
+        </div>
+
+        <div id="tableOfContents">
+          <div class="tableOfContentsContainer">
             <h2 class="titleLine">Table of Contents</h2>
             <ol class="outerList">
               <li>
@@ -113,11 +119,6 @@
                 </ol>
               </li>
             </ol>
-          </TableOfContents>
-
-
-          <div class="mainSubTitle">
-            <p>Join the Watch. Help stop COVID-19 with crowdsourced data.</p>
           </div>
         </div>
 
@@ -256,7 +257,7 @@
           class="centerImage"
           style="display:flex;flex-direction:column;align-items:center;"
         >
-          <img src="~/assets/images/ROKDailyCases.png" alt="" />
+          <img src="../assets/images/ROKDailyCases.png" alt="" />
           <p style="color:gray;">
             <span>South Korea&nbsp;</span>
             <a
@@ -1064,10 +1065,7 @@
           isolation of suspected cases, outbreaks can be contained.
         </p>
         <p>
-          For intermediate testing and contact tracing detection rates, a system
-          like this would likely need to be used in combination with social
-          distancing measures and manual contact tracing. However, the measures
-          suggested by
+          For intermediate testing and contact tracing detection rates, a system like this would likely need to be used in combination with continued social distancing measures and manual contact tracing. However, the measures suggested by
           <a
             href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf"
             >Ferguson et al</a
@@ -1080,16 +1078,16 @@
           is the simplest to quantify. Any two users of the app who are at the
           same location at the same time will register a contact event. In
           theory, all transmission events except those by fomites would be
-          detected. This includes all types of contact classified as being
+          detected. This includes all types of contact classified as being “high risk” by the 
           <a
             href="https://www.ecdc.europa.eu/sites/default/files/documents/covid-19-public-health-management-contact-novel-coronavirus-cases-EU.pdf"
-            >“high risk” by the ECDC</a
+            >ECDC</a
           >.
         </p>
         <p>
           Preventative measures encouraged by the app such as avoiding high-risk
           areas and increased precautions would reduce overall transmission
-          rate, however it is difficult to quantify this impact. The current
+          rate, but it is difficult to quantify this impact. The current
           design of the app may also increase detection rate by informing users
           of symptoms to watch for and how to get tested. Ongoing research is
           being conducted on how to allocate testing resources to maximize the
@@ -1118,7 +1116,7 @@
           class="centerImage"
           style="display:flex;flex-direction:column;align-items:center;"
         >
-          <img src="~/assets/images/ProportionTraced.png" alt="" />
+          <img src="../assets/images/ProportionTraced.png" alt="" />
           <p style="color:gray;">
             Transmission Detection vs. App Usage curves for testing rates [0.05,
             0.1, 0.2, 0.4, 0.8]. BLE_Acc gives the detection rate of
@@ -1163,20 +1161,10 @@
           </p>
         </v-row>
         <p>
-          <strong
-            >So for the question: “Can an effective contact tracing program
-            reduce local transmission so that sustained local spread does not
-            occur?”
+          <strong>What we’ve most wanted to know is the answer to this question: “Can an effective contact tracing program reduce local transmission so that sustained local spread does not occur?” The answer looks like yes.
           </strong>
         </p>
-        <p>
-          The answer seems to be yes. With a comprehensive testing program, high
-          contact tracing accuracy, and self-isolation of diagnosed individuals,
-          our models predict that each new case could cause on the order of 10
-          other cases before the outbreak is extinguished. Even in parameter
-          regimes where automated contact tracing alone is not enough, this
-          technology can be used in combination with existing methodologies to
-          provide greater protections with lower social cost.
+        <p>With a comprehensive testing program, high mobile app contact tracing accuracy, and self-isolation of diagnosed individuals, our models predict that each new case could cause on the order of 10 other cases before the outbreak is extinguished. 
         </p>
         <p>
           Also, even in parameter regimes where automated contact tracing alone
@@ -1210,24 +1198,13 @@
         <p>The app will be implemented and launched in two parts:</p>
         <ul style="list-style:decimal">
           <li>
-            The first version will implement a GPS/Bluetooth proximity network
-            system to develop a heatmap to track and notify users of potential
-            close contact exposure to SARS-CoV-2.
+            The first version will implement the Bluetooth proximity network and risk heatmap to notify users of potential close contact exposure to SARS-CoV-2 (Fig 1).
           </li>
           <li>
-            The second version will build upon the initial launch. Users may be
-            able to self-report symptoms, receive personalized advice based on
-            the local health department, and receive CDC advice and resources
-            (Fig. 1). When users come in contact with someone with COVID-19 or
-            symptoms of it, their phones will send them a push notification of
-            the alert. Users could then see their Transmission Phone Log within
-            the application to determine where and when they may have contracted
-            the virus. Additional features include incorporating a
-            locally-stored questionnaire noting recent travel and symptoms to
-            better determine the user’s risk level (Fig. 2).
+            The second version will build upon the initial launch. Users may be able to self-report symptoms to receive personalized advice based on their risk score and advice from the local health department (Fig. 2). 
           </li>
         </ul>
-        <p></p>
+        <p>We intend to build the tools for all of these systems, but understand that regulatory requirements may vary by region. The app will be designed so that each component can be used separately if necessary.</p>
         <p>
           We also want to emphasize that high user adoption as quickly as
           possible after release will facilitate the best possible outcomes for
@@ -1243,13 +1220,7 @@
         <h2 id="conclusion"><span class="titleLine">Conclusions</span></h2>
         <br />
         <p>
-          Mobile technologies can provide instantaneous and high accuracy
-          contact tracing, even between strangers at low social and economic
-          cost. Instead of requiring thousands of healthcare workers to do this
-          manually (as is the current approach in China) the process will be
-          essentially cost-free. Also, because the system will be so accurate, a
-          majority of people can continue to live their lives without the need
-          for increased social distancing.
+          Mobile technologies can provide instantaneous and high accuracy contact tracing, even between strangers at low social and economic cost. Instead of requiring thousands of healthcare workers to do this manually, the process will be essentially cost-free. Because the system will be so accurate, a majority of people can resume living their lives normally without the need for indefinite social distancing.
         </p>
         <p>
           We are developing this technology as a high-quality filter to be used
@@ -1825,12 +1796,10 @@ img {
 
 <script>
 import Heatmap from "~/components/Heatmap.vue";
-import TableOfContents from "~/components/TableOfContents.vue";
 
 export default {
   components: {
-    Heatmap,
-    TableOfContents
+    Heatmap
   }
 };
 </script>
