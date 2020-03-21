@@ -17,12 +17,12 @@
                   <li><a href="#privacy">Privacy Focus</a></li>
                   <li>
                     <a href="#interventionBackground"
-                      >Mobile Phone Intervention Background</a
+                      >Current Mobile Phone Interventions</a
                     >
                   </li>
                   <li>
                     <a href="#interventionOptimization"
-                      >Mobile Phone Intervention Optimization</a
+                      >Making Interventions More Efficient</a
                     >
                   </li>
                 </ol>
@@ -46,17 +46,22 @@
                       </li>
                       <li>
                         <a href="#blueToothModel"
-                          >Bluetooth Contact Tracing Model Description</a
+                          >Model Description</a
                         >
                       </li>
                       <li>
                         <a href="#blueToothPrivacy"
-                          >Bluetooth Privacy Model and Database</a
+                          >Privacy Model</a
                         >
                       </li>
                       <li>
                         <a href="#bluetoothDatabase"
-                          >Bluetooth Contact Tracing Implementation</a
+                          >Database</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#bluetoothImplementation"
+                          >Implementation</a
                         >
                       </li>
                     </ol> -->
@@ -65,21 +70,26 @@
                     <a href="#heatmapTitle">Part 2: GPS Heatmap</a>
                     <!-- <ol class="nestedInnerList">
                       <li>
-                        <a href="#heatmapDesc">GPS Heatmap Model Description</a>
+                        <a href="#heatmapDesc">Model Description</a>
                       </li>
                       <li>
                         <a href="#heatmapImplementation"
-                          >GPS Heatmap Implementation</a
+                          >Implementation</a
                         >
                       </li>
                       <li>
                         <a href="#heatmapEpidemiology"
-                          >GPS Heatmap Epidemiology Model</a
+                          >Epidemiology Model</a
                         >
                       </li>
                       <li>
                         <a href="#databasePrivacy"
-                          >GPS Privacy Model and Database</a
+                          >Privacy Model</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#databaseAnonymization"
+                          >GPS Anonymization Model</a
                         >
                       </li>
                     </ol> -->
@@ -744,7 +754,7 @@
 
         <p>
           <span id="heatmapEpidemiology" class="subTitleLine"
-            >Heatmap Epidemiology Model</span
+            >Epidemiology Model</span
           >
         </p>
         <p>
@@ -805,7 +815,7 @@
         </p>
 
         <p>
-          <span id="databasePrivacy" class="subTitleLine">Privacy Model</span>
+          <span id="databasePrivacy" class="subTitleLine">Privacy Model and Database</span>
         </p>
         <p>
           Given the personally identifying nature of the spatiotemporal
